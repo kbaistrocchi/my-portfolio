@@ -1,0 +1,57 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: radial-gradient(farthest-corner at 64px 300px, rgb(81,199,218) 1%, rgb(0,59,87) 89%);
+    background-size: 100% 138%;
+    background-position: 0 200;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Francois One', sans-serif;
+}
+
+header {
+    display: flex;
+    align-content: flex-end;
+    background: rgb(81,199,218);
+    height: 300px;
+}
+
+header h1 {
+    color: white;
+    background-color: rgb(0, 59, 87);
+    font-size: 72px;
+    letter-spacing: 2px;
+    padding: 3% 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+header img {
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    top: 17px;
+}
+
+.project-carousel-container {
+    height: 400px;
+    width: 50%;
+    background-color: rgb(0,59,87);
+    margin: 75px auto;
+    box-shadow: 2px 2px 25px -9px;
+}
+
+div img {
+    transform: rotate(90deg);
+
+}
+footer p {
+    text-align: center;
+    color: #fff;
+}
