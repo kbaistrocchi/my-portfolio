@@ -5,9 +5,9 @@ html {
 
 body {
     width: 100%;
-    background: radial-gradient(farthest-corner at 64px 300px, rgb(81,199,218) 1%, rgb(0,59,87) 89%);
-    background-size: 100% 138%;
-    background-position: 0 200;
+    background: radial-gradient(farthest-corner at 0% 100%, rgba(0,59,87, 0.9) 5%, rgba(81,199,218, 0.1) 50%) no-repeat, radial-gradient(farthest-corner at 100% 100%, rgb(0,59,87) 15%, rgb(81,199,218) 90%) no-repeat;
+    /* background-size: 100% 138%;
+    background-position: 0 200; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,7 +18,7 @@ header {
     display: flex;
     align-content: flex-end;
     flex-direction: column;
-    background: rgb(81,199,218);
+    /* background: rgb(81,199,218); */
     height: 300px;
 }
 header div {
