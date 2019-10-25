@@ -5,51 +5,49 @@ html {
 
 body {
     width: 100%;
-    background: radial-gradient(farthest-corner at 0% 100%, rgba(0,59,87, 0.9) 5%, rgba(81,199,218, 0.1) 50%) no-repeat, radial-gradient(farthest-corner at 100% 100%, rgb(0,59,87) 15%, rgb(81,199,218) 90%) no-repeat;
+    background: radial-gradient(farthest-corner at 0% 100%, rgba(0,59,87, 0.9) 5%, rgba(81,199,218, 0.1) 50%) no-repeat, radial-gradient(farthest-corner at 100% 100%, rgb(0,29,65) 15%, rgb(81,199,218) 90%) no-repeat;
     /* background-size: 100% 138%;
     background-position: 0 200; */
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Economica';
+    text-shadow: 1px 1px #000;
 }
 
 header {
-    display: flex;
+    /* display: flex;
     align-content: flex-end;
-    flex-direction: column;
+    flex-direction: column; */
     /* background: rgb(81,199,218); */
-    height: 300px;
-}
-header div {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(0, 59, 87);
-
+    /* height: 300px; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'img title';
 }
 
 header h1 {
     color: white;
-    font-size: 72px;
+    /* background: rgba(0,59,87, 0.7); */
+    font-size: 7.2rem;
     letter-spacing: 2px;
-    padding: 3% 0;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
+    grid-area: title;
 }
 
-header img {
+.koala {
     width: 150px;
     position: absolute;
     right: 10%;
     top: 17px;
 }
 .bkgd-graphic {
-    width: 1000px;
-    /* transform: rotate(270deg); */
+    width: 40%;
     position: absolute;
     left: 0;
-    top: -50px;
+    top: -2px;
     z-index: -10;
 }
 
@@ -64,6 +62,10 @@ header img {
 div img {
     transform: rotate(90deg);
 
+}
+
+footer {
+    height: 100px;
 }
 footer p {
     text-align: center;
