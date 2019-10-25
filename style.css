@@ -59,9 +59,12 @@ header h1 {
     box-shadow: 2px 2px 25px -9px;
 }
 
-div img {
-    transform: rotate(90deg);
+.project-carousel-container div {
+    max-width: 100%;
+}
 
+.project-carousel-container img {
+    width: 100%;
 }
 
 footer {
