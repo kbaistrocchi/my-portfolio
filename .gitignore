@@ -1,2 +1,24 @@
+# Ignore OS files #
+# =============== #
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+# Ignore packages #
+# =============== #
+node_modules/
+yarn.lock
+
+# Ignore PerfTool #
+# =============== #
+perf-tool/
+# Ignore Folders #
+# =============== #
+/assets
+Collapse
 assets/
