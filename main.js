@@ -1,24 +1,27 @@
 (function() {
 
     const $carousel = $('.project-carousel-container')
+    const $cell = $('.is-selected')
 
-    // $carousel.on('mouseenter.flickity', function() {
-    //     console.log('mouse has entered carousel')
-    // })
+    $carousel.on('mouseenter', function(e) {
+        if(e.target.type !== 'button') {
+            $('.is-selected .project-description').fadeIn()
+        }
+    })
+
+    $carousel.on('mouseleave', function() {
+        $('.is-selected .project-description').fadeOut()
+    })
 
 
 
     $carousel.flickity({
         // options
         cellAlign: 'left',
-        contain: true
+        contain: true,
+        draggable: false,
+        accessible: true
       });
-
-    //   $('.project-cell').on('mouseenter', (e) => {
-    //       console.log(e)
-    //       $(e).hide()
-    //       $('.project-description').show();
-    //   })
 
 
 })(jQuery);
