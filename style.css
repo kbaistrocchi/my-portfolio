@@ -1,26 +1,24 @@
 html {
     font-size: 16px;
-    box-sizing: border-box;
 }
 
 body {
     width: 100%;
     background: radial-gradient(farthest-corner at 0% 100%, rgba(0,59,87, 0.9) 5%, rgba(81,199,218, 0.1) 50%) no-repeat, radial-gradient(farthest-corner at 100% 100%, rgb(0,29,65) 15%, rgb(81,199,218) 90%) no-repeat;
-    /* background-size: 100% 138%;
-    background-position: 0 200; */
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Economica';
     text-shadow: 1px 1px #000;
 }
+p {
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+
+}
 
 header {
-    /* display: flex;
-    align-content: flex-end;
-    flex-direction: column; */
-    /* background: rgb(81,199,218); */
-    /* height: 300px; */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: 'img title';
@@ -37,13 +35,7 @@ header h1 {
     grid-area: title;
 }
 
-.koala {
-    width: 150px;
-    position: absolute;
-    right: 10%;
-    top: 17px;
-}
-.bkgd-graphic {
+.circuit-graphic {
     width: 40%;
     position: absolute;
     left: 0;
@@ -60,7 +52,7 @@ header h1 {
     position: relative;
 }
 
-.project-carousel-container div {
+.project-cell {
     width: 100%;
 }
 
@@ -70,15 +62,39 @@ header h1 {
 
 .project-description {
     display: none;
-    height: 450px;
-    width: 60%;
-    background: rgba(195,195,196,0.8);
+    height: 442px;
+    background: rgba(195,195,196,0.95);
     position: absolute;
     top:0;
     left: 0;
+    padding: 10%;
+    font-size: 1.5rem;
+    color: rgb(0,29,65);
 }
 
-/* Flickity Buttons */
+.project-title {
+    font-family: 'Economica';
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.cta-btn {
+    height: 62px;
+    background: rgb(0,29,65);
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Titillium Web';
+    padding: 2.5%;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background: rgb(0,59,87);
+    cursor: pointer;
+}
+
+/* Flickity Buttons and Page Dots */
 
 .flickity-button {
     background: transparent;
@@ -92,8 +108,24 @@ header h1 {
     left: -55px;
 }
 .flickity-prev-next-button.next {
-right: -55px;
+    right: -55px;
 }
+
+.flickity-page-dots {
+    bottom: -40px;
+  }
+
+.flickity-page-dots .dot {
+    width: 8px;
+    height: 8px;
+    opacity: 0.5;
+    background: transparent;
+    border: 2px solid rgb(195,195,196);
+  }
+ 
+  .flickity-page-dots .dot.is-selected {
+    background: rgb(195,195,196);
+  }
 
 footer {
     height: 100px;
