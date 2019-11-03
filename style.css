@@ -163,7 +163,7 @@ footer p {
         width: 100%;
         /* background: linear-gradient(transparent, rgb(0,59,87) 50%, transparent); */
         background: rgb(0,59,87);
-        margin-top: 207px;
+        margin: 207px 0 0 0;
         padding: 13px 5px;
     }
 
