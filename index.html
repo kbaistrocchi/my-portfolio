@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="images/koala-silhouetteArtboard 1.png"/>
     <title>Icy Koala</title>
-    <script src="main.js" defer></script>
+    <script src="build/js/main.min.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Economica:400,700|Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="build/css/style.min.css">
 </head>
 <body>
     <header>
-        <img src="images/circuit-forest-koala.svg" class="circuit-graphic">
-        <!-- <img src="images/Silhouette-koala-lightgrey.svg" class="koala" alt="koala head"> -->
+        <img src="images/circuit-forest-koala.svg" class="circuit-graphic desktop-background">
+        <img src="images/circuit-forest.svg" class="circuit-graphic mobile-background">
+        <img src="images/Silhouette-koala-lightgrey.svg" class="mobile-koala" alt="koala head">
         <h1>Icy Koala Development</h1>
     </header>
     
@@ -85,8 +86,8 @@
                 <img src="images/desktop-pong.jpg" alt="pong game website screenshot">
                 <div class="project-description">
                     <p>
-                        <span class="project-title">Pong</span> is a game built entirely in JavaScript that allows users to play an 
-                        old-style pong game by moving paddles up and down to deflect a ball
+                        <span class="project-title">Pong</span> is a game built entirely in vanilla JavaScript that allows users to play an 
+                         old-style pong game by moving paddles up and down to deflect a ball
                          and score on the opposing player. This project provided excellent 
                          practice in implementing and organizing JavaScript modules and SVGs.
                     </p>

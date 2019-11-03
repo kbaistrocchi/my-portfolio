@@ -37,6 +37,10 @@ header h1 {
     grid-area: title;
 }
 
+.mobile-background, .mobile-koala {
+    display: none;
+}
+
 .circuit-graphic {
     width: 40%;
     max-width: 500px;
@@ -145,4 +149,49 @@ footer {
 footer p {
     text-align: center;
     color: #fff;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 500px) {
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 5.4rem;
+        text-align: center;
+        width: 100%;
+        /* background: linear-gradient(transparent, rgb(0,59,87) 50%, transparent); */
+        background: rgb(0,59,87);
+        margin-top: 207px;
+        padding: 13px 5px;
+    }
+
+    .desktop-background {
+        display: none;
+    }
+
+    .mobile-background {
+        display: block;
+    }
+
+    .mobile-koala {
+        display: block;
+        width: 200px;
+        position: absolute;
+        left: 45%;
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+    
+    .circuit-graphic {
+        min-width: 100%;
+    }
+
+    .project-carousel-container {
+        min-width: 98%;
+    }
 }

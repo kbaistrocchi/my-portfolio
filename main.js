@@ -12,6 +12,18 @@
         $smScreenMsg.show()
     }
 
+    $(window).resize(function() {
+        $screenSize = $(window).width();
+        if ($screenSize < 1000) {
+            $desktopOnlyBtn.hide()
+            $smScreenMsg.show()
+        }
+        else {
+            $desktopOnlyBtn.show()
+            $smScreenMsg.hide()
+        }
+    })
+
 
 
     $carousel.on('mouseenter', function(e) {
