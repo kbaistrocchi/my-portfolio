@@ -1,0 +1,83 @@
+.desktop-background {
+    @include mobile {
+        display: none;
+    }
+}
+.mobile-background {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
+.mobile-koala {
+    display: none;
+    @include mobile {
+        display: block;
+        width: 200px;
+        position: absolute;
+        left: 45%;
+        transform: rotate(3deg);
+    }
+}
+
+.circuit-graphic {
+    width: 40%;
+    max-width: 500px;
+    min-width: 400px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    z-index: -10;
+    @include mobile {
+        min-width: 100%;
+    }
+}
+
+.cta-btn {
+    height: 62px;
+    background: rgb(0,29,65);
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Titillium Web';
+    padding: 2.5%;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background: rgb(0,59,87);
+    cursor: pointer;
+}
+
+// Flickity Buttons and Page Dots
+
+.flickity-button {
+    background: transparent;
+    color: rgb(194,194,195);
+}
+.flickity-button:hover {
+    background: black;
+}
+
+.flickity-prev-next-button.previous {
+    left: -55px;
+}
+.flickity-prev-next-button.next {
+    right: -55px;
+}
+
+.flickity-page-dots {
+    bottom: -40px;
+  }
+
+.flickity-page-dots .dot {
+    width: 8px;
+    height: 8px;
+    opacity: 0.5;
+    background: transparent;
+    border: 2px solid rgb(195,195,196);
+}
+ 
+.flickity-page-dots .dot.is-selected {
+background: rgb(195,195,196);
+}

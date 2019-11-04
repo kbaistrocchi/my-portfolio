@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const terser = require('gulp-terser'),
 rename = require('gulp-rename'),
-// sass = require('gulp-sass'),
+sass = require('gulp-sass'),
 cssnano = require('gulp-cssnano'),
 autoprefixer = require('gulp-autoprefixer'),
 eslint = require('gulp-eslint'),
@@ -16,9 +16,10 @@ gulp.task('eslint', function() {
 })
 
 
-gulp.task('cssMin', function() {
+gulp.task('sass', function() {
     return gulp
-    .src('style.css')
+    .src('./sass/style.scss')
+    .pipe(sass())
     .pipe(
         autoprefixer())
     .pipe(gulp.dest('./build/css'))
@@ -50,7 +51,7 @@ gulp.task('default', function() {
     // watch any js files and if there's a change, run my series of scripts defined above
     gulp.watch('main.js', gulp.series(['scripts', 'eslint']) ).on('change', browserSync.reload)
     // run sass above if changed occur in sass files
-    gulp.watch('style.css', gulp.series('cssMin')).on('change', browserSync.reload)
+    gulp.watch('./sass/*.scss', gulp.series('sass')).on('change', browserSync.reload)
     gulp.watch('./*.html').on('change', browserSync.reload)
 
      
