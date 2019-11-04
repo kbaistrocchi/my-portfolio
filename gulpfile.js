@@ -18,7 +18,7 @@ gulp.task('eslint', function() {
 
 gulp.task('sass', function() {
     return gulp
-    .src('./sass/style.scss')
+    .src('sass/style.scss')
     .pipe(sass())
     .pipe(
         autoprefixer())

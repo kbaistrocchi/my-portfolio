@@ -9,7 +9,6 @@
     <script src="build/js/main.min.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Economica:400,700|Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="build/css/style.min.css">
 </head>
 <body>
@@ -21,9 +20,35 @@
     </header>
     
     <main>
+        <section class="project-list">
+            <div class="site-category">
+                <h2>Responsive Sites</h2>
+                <ul class="project-nav">
+                    <li><a href="#dev-quotes">Quotes on Dev</a></li>
+                    <li><a href="#insta-app">Instanews</a></li>
+                    <li><a href="#aloha-apparel">Aloha</a></li>
+                </ul>
+            </div>
+            <div class="site-category">
+                <h2>WordPress Themes</h2>
+                <ul class="project-nav">
+                    <li><a href="#vesta-wrk">Vesta</a></li>
+                    <li><a href="#inhab">Inhabitent</a></li>
+                    <li><a href="#dev-quotes">Quotes on Dev</a></li>
+                </ul>
+            </div>
+            <div class="site-category">
+                <h2>Website Apps</h2>
+                <ul class="project-nav">
+                    <li><a href="#pong-game">Pong</a></li>
+                    <li><a href="#insta-app">Instanews</a></li>
+                </ul>
+            </div>
+        </section>
+
         <section class="project-carousel-container">
 
-            <div class="project-cell">
+            <div class="project-cell" id="dev-quotes">
                 <img src="images/desktop-quotes.jpg" alt="quotes on dev website screenshot">
                 <div class="project-description">
                     <p>
@@ -36,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="project-cell">
+            <div class="project-cell" id="vesta-wrk">
                     <img src="images/desktop-vesta.jpg" alt="vesta website screenshot">
                     <div class="project-description">
                         <p>
@@ -53,7 +78,7 @@
                     </div>
                 </div>
 
-            <div class="project-cell">
+            <div class="project-cell" id="inhab">
                 <img src="images/desktop-inhabitent.jpg" alt="quotes on dev website screenshot">
                 <div class="project-description">
                     <p>
@@ -69,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="project-cell">
+            <div class="project-cell" id="insta-app">
                 <img src="images/desktop-instanews.jpg" alt="instanews website screenshot">
                 <div class="project-description">
                     <p>
@@ -82,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="project-cell">
+            <div class="project-cell" id="pong-game">
                 <img src="images/desktop-pong.jpg" alt="pong game website screenshot">
                 <div class="project-description">
                     <p>
@@ -95,7 +120,7 @@
                 </div>
             </div>
 
-            <div class="project-cell">
+            <div class="project-cell" id="aloha-apparel">
                 <img src="images/desktop-aloha.jpg" alt="aloha website screenshot">
                 <div class="project-description">
                     <p>
@@ -119,5 +144,6 @@
         crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
 </body>
 </html>

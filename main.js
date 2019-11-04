@@ -1,7 +1,6 @@
 (function() {
 
     const $carousel = $('.project-carousel-container')
-    const $cell = $('.is-selected')
 
     const $desktopOnlyBtn = $('.desktop-only')
     let $screenSize = $(window).width()
@@ -43,8 +42,10 @@
         cellAlign: 'left',
         contain: true,
         draggable: false,
-        accessible: true
+        accessible: true,
+        hash: true
       });
+
 
 
 })(jQuery);
