@@ -5,6 +5,14 @@
     const $desktopOnlyBtn = $('.desktop-only')
     let $screenSize = $(window).width()
     const $smScreenMsg = $('.non-desktop-msg')
+    const $projectNav = $('.project-nav li')
+    
+
+    $projectNav.on('click', function() {
+        $('html, body').animate({
+            scrollTop: $carousel.offset().top
+        })
+    })
 
     if ($screenSize < 1000) {
         $desktopOnlyBtn.hide()

@@ -28,6 +28,9 @@
     left: 0;
     top: -2px;
     z-index: -10;
+    @include tablet {
+        left: -150px;
+    }
     @include mobile {
         min-width: 100%;
     }
