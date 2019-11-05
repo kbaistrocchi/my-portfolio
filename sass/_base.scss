@@ -48,6 +48,28 @@ table {
 	border-spacing: 0;
 }
 
+// Variables
+$icy-grey: rgb(166,166,166);
+$light-blue: rgb(81,199,218);
+$primary-blue: rgb(0,59,87);
+$dark-blue: rgb(0,29,65);
+
+
+// Mixins
+
+@mixin tablet {
+    @media only screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+
 html {
     font-size: 16px;
 }
@@ -66,21 +88,18 @@ h2 {
     font-size: 2rem;
 }
 
-p, li {
+p, li, a {
     font-family: 'Titillium Web', sans-serif;
     letter-spacing: 1px;
     line-height: 1.3;
+    color: #fff;
 }
 
-
-@mixin tablet {
-    @media only screen and (max-width: 900px) {
-        @content;
+a {
+    text-decoration: none;
+    &:hover {
+        color: rgb(166,166,166)
     }
 }
 
-@mixin mobile {
-    @media only screen and (max-width: 500px) {
-        @content;
-    }
-}
+

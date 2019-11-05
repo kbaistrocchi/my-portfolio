@@ -42,12 +42,12 @@
     padding: 2.5%;
     text-transform: uppercase;
     margin-top: 20px;
+    &:hover {
+        background: rgb(0,59,87);
+        cursor: pointer;
+    }
 }
 
-.cta-btn:hover {
-    background: rgb(0,59,87);
-    cursor: pointer;
-}
 
 // Flickity Buttons and Page Dots
 
@@ -80,4 +80,12 @@
  
 .flickity-page-dots .dot.is-selected {
 background: rgb(195,195,196);
+}
+
+.fa-linkedin {
+    font-size: 2rem;
+    margin-top: 10px;
+    &:hover {
+        color: $icy-grey;
+    }
 }
