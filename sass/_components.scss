@@ -16,6 +16,7 @@
         width: 200px;
         position: absolute;
         left: 45%;
+        top: 20px;
         transform: rotate(3deg);
     }
 }
@@ -57,6 +58,9 @@
 .flickity-button {
     background: transparent;
     color: rgb(194,194,195);
+    @include tablet {
+        display: none;
+    }
 }
 .flickity-button:hover {
     background: black;

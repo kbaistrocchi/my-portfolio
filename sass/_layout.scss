@@ -18,13 +18,13 @@ header {
             font-size: 6rem;
         }
         @include mobile {
-            font-size: 5.4rem;
+            font-size: 5rem;
             text-align: center;
             width: 100%;
             /* background: linear-gradient(transparent, rgb(0,59,87) 50%, transparent); */
             background: rgb(0,59,87);
-            margin: 207px 0 0 0;
-            padding: 13px 5px;
+            margin: 158px 0 0 0;
+            padding: 13px 5px 27px 5px;
         }
     }
     @include tablet {
@@ -40,22 +40,27 @@ header {
     box-shadow: 3px -5px 23px -12px;
     display: flex;
     justify-content: space-evenly;
-    height: 200px;
     width: 60%;
     min-width: 600px;
     margin: 85px auto;
     color: #fff;
     text-align: center;
+    padding: 35px 0;
+    @include mobile {
+        flex-direction: column;
+        min-width: 80%;
+    }
 }
 
 .site-category {
-    margin-top: 39px;
     padding: 0 10px;
     ul {
         margin-top: 10px;
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
     li {
-        // text-align: center;
         margin-top: 3px;
     }
 }

@@ -94,13 +94,13 @@ header {
         font-size: 6rem; } }
     @media only screen and (max-width: 500px) {
       header h1 {
-        font-size: 5.4rem;
+        font-size: 5rem;
         text-align: center;
         width: 100%;
         /* background: linear-gradient(transparent, rgb(0,59,87) 50%, transparent); */
         background: #003b57;
-        margin: 207px 0 0 0;
-        padding: 13px 5px; } }
+        margin: 158px 0 0 0;
+        padding: 13px 5px 27px 5px; } }
   @media only screen and (max-width: 900px) {
     header {
       grid-template-columns: 30% 1fr; } }
@@ -120,18 +120,27 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 200px;
   width: 60%;
   min-width: 600px;
   margin: 85px auto;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding: 35px 0; }
+  @media only screen and (max-width: 500px) {
+    .project-list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      min-width: 80%; } }
 
 .site-category {
-  margin-top: 39px;
   padding: 0 10px; }
   .site-category ul {
     margin-top: 10px; }
+    @media only screen and (max-width: 500px) {
+      .site-category ul {
+        margin-bottom: 20px; } }
   .site-category li {
     margin-top: 3px; }
 
@@ -205,6 +214,7 @@ footer {
       width: 200px;
       position: absolute;
       left: 45%;
+      top: 20px;
       -webkit-transform: rotate(3deg);
               transform: rotate(3deg); } }
 
@@ -239,6 +249,9 @@ footer {
 .flickity-button {
   background: transparent;
   color: #c2c2c3; }
+  @media only screen and (max-width: 900px) {
+    .flickity-button {
+      display: none; } }
 
 .flickity-button:hover {
   background: black; }
