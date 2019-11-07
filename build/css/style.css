@@ -91,7 +91,8 @@ header {
     grid-area: title; }
     @media only screen and (max-width: 900px) {
       header h1 {
-        font-size: 6rem; } }
+        font-size: 6rem;
+        margin-right: 0px; } }
     @media only screen and (max-width: 500px) {
       header h1 {
         font-size: 5rem;
@@ -126,6 +127,9 @@ header {
   color: #fff;
   text-align: center;
   padding: 35px 0; }
+  @media only screen and (max-width: 900px) {
+    .project-list {
+      min-width: 75%; } }
   @media only screen and (max-width: 500px) {
     .project-list {
       -webkit-box-orient: vertical;
@@ -145,23 +149,31 @@ header {
     margin-top: 3px; }
 
 .project-carousel-container {
-  height: 100%;
+  height: 440px;
   width: 60%;
   max-width: 900px;
   min-width: 750px;
-  /* background-color: rgb(0,59,87); */
   margin: 75px auto;
   -webkit-box-shadow: 3px -5px 23px -12px;
           box-shadow: 3px -5px 23px -12px;
   position: relative; }
-  .project-carousel-container img {
-    width: 100%; }
+  @media only screen and (max-width: 900px) {
+    .project-carousel-container {
+      max-width: 95%;
+      min-width: 85%; } }
   @media only screen and (max-width: 500px) {
     .project-carousel-container {
-      min-width: 99%; } }
+      min-width: 100%; } }
 
-.project-cell {
-  width: 100%; }
+.project-img-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .project-img-wrapper img {
+    height: 440px;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .project-description {
   display: none;
