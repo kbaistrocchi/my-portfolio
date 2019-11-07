@@ -48,15 +48,21 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 16px; } }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 14px; } }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Economica';
   letter-spacing: 2px; }
 
 h1 {
-  font-size: 7.2rem;
+  font-size: 6.3rem;
   text-shadow: 1px 1px #000; }
 
 h2 {
@@ -91,11 +97,10 @@ header {
     grid-area: title; }
     @media only screen and (max-width: 900px) {
       header h1 {
-        font-size: 6rem;
         margin-right: 0px; } }
     @media only screen and (max-width: 500px) {
       header h1 {
-        font-size: 5rem;
+        font-size: 5.5rem;
         text-align: center;
         width: 100%;
         /* background: linear-gradient(transparent, rgb(0,59,87) 50%, transparent); */
@@ -121,7 +126,7 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 60%;
+  max-width: 748px;
   min-width: 600px;
   margin: 85px auto;
   color: #fff;
@@ -150,20 +155,31 @@ header {
 
 .project-carousel-container {
   height: 440px;
-  width: 60%;
-  max-width: 900px;
-  min-width: 750px;
+  width: 748px;
   margin: 75px auto;
   -webkit-box-shadow: 3px -5px 23px -12px;
           box-shadow: 3px -5px 23px -12px;
   position: relative; }
   @media only screen and (max-width: 900px) {
     .project-carousel-container {
-      max-width: 95%;
-      min-width: 85%; } }
+      max-width: 602px;
+      min-width: 500px; } }
   @media only screen and (max-width: 500px) {
     .project-carousel-container {
       min-width: 100%; } }
+
+.project-cell {
+  max-width: 100%; }
+
+@media only screen and (max-width: 900px) {
+  .desktop-img {
+    display: none; } }
+
+.tablet-img {
+  display: none; }
+  @media only screen and (max-width: 900px) {
+    .tablet-img {
+      display: block; } }
 
 .project-img-wrapper {
   width: 100%;
@@ -178,6 +194,7 @@ header {
 .project-description {
   display: none;
   height: 100%;
+  max-width: 100%;
   background: rgba(195, 195, 196, 0.95);
   position: absolute;
   top: 0;
